@@ -1,3 +1,7 @@
+/* *{
+  outline: red  solid 1px;
+  box-sizing: border-box;
+} */
 
 :root {
 
@@ -160,6 +164,16 @@
   }
 } */
 
+/* DM Sans - Light */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DM Sans - Regular */
 @font-face {
   font-family: 'DM Sans';
   src: url('/fonts/DMSans-Regular.woff2') format('woff2');
@@ -168,6 +182,25 @@
   font-display: swap;
 }
 
+/* DM Sans - Medium */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DM Sans - SemiBold */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DM Sans - Bold */
 @font-face {
   font-family: 'DM Sans';
   src: url('/fonts/DMSans-Bold.woff2') format('woff2');
@@ -435,25 +468,32 @@ body {
 .main-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
   margin-bottom: 40px;
 }
 
+.main-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .main-title {
-  font-size: 2rem;
+  font-size: 3.3rem;
   font-weight: 700;
-  margin-bottom: 4px;
+  letter-spacing: -0.04em;
 }
 
 .subtitle {
-  color: var(--app-text-muted);
-  font-size: 0.9rem;
+  color: var(--md-sys-color-on-surface);
+  font-size: 1.2rem;
 }
 
 .title-date {
-  color: var(--app-text-muted);
-  font-size: 0.9rem;
+  color: var(--md-sys-color-on-surface);
+  font-size: 1.2rem;
   font-weight: 500;
+  letter-spacing: -0.04em;
 }
 
 .task-list {
