@@ -202,9 +202,12 @@
 /* Basic reset */
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
+  height: 100%;
   scroll-behavior: smooth;
   font: 16px "DM Sans", system-ui, Arial, Helvetica, sans-serif;
 }
@@ -217,23 +220,18 @@ html {
 }
 
 body {
-  height: 100%;
-  width: 100%;
   letter-spacing: var(--tracking-tight);
   color: var(--md-sys-color-on-surface);
   background-color: var(--md-sys-color-background);
 }
 
-/* *{
+*{
   outline: red  solid 1px;
   box-sizing: border-box;
-} */
+}
 
-
-.button-tinted {
-  --color: var(--color-base-primary);
-  color: var(--color);
-  background-color: color-mix(in oklch, var(--color) 15%, transparent );
+main {
+  width: 100%;
 }
 
 .main-header {
@@ -244,5 +242,5 @@ body {
 .main-title-container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  /* gap: 6px; */
 }
