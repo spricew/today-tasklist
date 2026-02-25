@@ -493,6 +493,7 @@ button, input, select, textarea {
 .subtitle {
   color: var(--md-sys-color-on-surface);
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .title-date {
