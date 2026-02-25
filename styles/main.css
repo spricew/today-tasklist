@@ -226,6 +226,11 @@ body {
   color: var(--app-text-main);
 }
 
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .app-container {
   display: flex;
   height: 100vh;
@@ -436,17 +441,18 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--md-sys-color-secondary);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 16px;
-  font-size: 0.9rem;
-  font-weight: 600;
   display: flex;
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  border: none;
+  border-radius: 9999px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  background-color: var(--md-sys-color-secondary);
+  color: var(--md-sys-color-on-secondary);
   transition: background 0.2s;
 }
 
