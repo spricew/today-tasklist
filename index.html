@@ -1,32 +1,219 @@
 <!DOCTYPE html>
 <html lang="es" data-theme="light">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Today App, una aplicacion para gestionar tus tareas">
-    <title>Today App</title>
+    <title>Today App - TaskFlow</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
-
 <body>
-
-
-    <main>
-
-        <header class="main-header">
-            <div class="main-title-container">
-                <h1 class="main-title">Today</h1>
-                <p>You have 8 tasks scheduled for today</p>    
+    <div class="app-container">
+        <aside class="sidebar-left">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <span class="logo-text">Today checklist</span>
             </div>
 
-            <span class="title-date">Tuesday, Oct 24</span>
-        </header>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <div class="nav-item-left">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        Today
+                    </div>
+                    <span class="badge">8</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-left">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7m20 0v5a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-5m20 0h-3.5a1 1 0 0 0-.7.3l-2.1 2.1a1 1 0 0 1-.7.3H9a1 1 0 0 1-.7-.3l-2.1-2.1a1 1 0 0 0-.7-.3H2"></path></svg>
+                        Inbox
+                    </div>
+                    <span class="badge badge-light">12</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-left">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
+                        Upcoming
+                    </div>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-left">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        Completed
+                    </div>
+                </a>
+            </nav>
 
+            <div class="projects-section">
+                <h3 class="section-title">PROJECTS</h3>
+                <a href="#" class="nav-item project-item">
+                    <span class="dot dot-yellow"></span> Work
+                </a>
+                <a href="#" class="nav-item project-item">
+                    <span class="dot dot-green"></span> Personal
+                </a>
+                <a href="#" class="nav-item project-item">
+                    <span class="dot dot-purple"></span> Health
+                </a>
+            </div>
+        </aside>
 
-    </main>
+        <div class="main-wrapper">
+            <header class="topbar">
+                <div class="search-container">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="text" placeholder="Quick search..." class="search-input">
+                </div>
+                
+                <div class="topbar-actions">
+                    <button class="icon-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                    </button>
+                    <button class="btn-primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        New Task
+                    </button>
+                </div>
+            </header>
 
-    <script type="module" src="./js/app.js"></script>
+            <main class="content-area">
+                <header class="main-header">
+                    <div class="main-title-container">
+                        <h1 class="main-title">Today</h1>
+                        <p class="subtitle">You have 8 tasks scheduled for today.</p>
+                    </div>
+                    <span class="title-date">Tuesday, Oct 24</span>
+                </header>
+
+                <div class="task-list">
+                    <div class="task-item">
+                        <button class="check-circle"></button>
+                        <div class="task-info">
+                            <p class="task-name">Finalize Q4 Marketing Deck</p>
+                            <div class="task-meta">
+                                <span class="meta-tag color-orange"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg> High</span>
+                                <span class="meta-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 2:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-item">
+                        <button class="check-circle"></button>
+                        <div class="task-info">
+                            <p class="task-name">Team sync with Design group</p>
+                            <div class="task-meta">
+                                <span class="meta-tag color-gray"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg> Work</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-item completed">
+                        <button class="check-circle checked">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"></path></svg>
+                        </button>
+                        <div class="task-info">
+                            <p class="task-name">Review user interview recordings</p>
+                            <div class="task-meta">
+                                <span class="meta-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Completed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-item">
+                        <button class="check-circle"></button>
+                        <div class="task-info">
+                            <p class="task-name">Pick up groceries</p>
+                            <div class="task-meta">
+                                <span class="meta-tag color-green"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path></svg> Personal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-item">
+                        <button class="check-circle"></button>
+                        <div class="task-info">
+                            <p class="task-name">Email client regarding project timeline</p>
+                            <div class="task-meta">
+                                <span class="meta-tag color-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path></svg> Normal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-item">
+                        <button class="check-circle"></button>
+                        <div class="task-info">
+                            <p class="task-name">Workout: Core & Cardio</p>
+                            <div class="task-meta">
+                                <span class="meta-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 6:30 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add-task-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        Add a task...
+                    </div>
+                </div>
+
+                <div class="upcoming-section">
+                    <h3 class="section-title">UPCOMING TOMORROW</h3>
+                    <div class="task-list">
+                        <div class="task-item">
+                            <button class="check-circle"></button>
+                            <div class="task-info"><p class="task-name">Monthly budget review</p></div>
+                        </div>
+                        <div class="task-item">
+                            <button class="check-circle"></button>
+                            <div class="task-info"><p class="task-name">Call Mom</p></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <aside class="sidebar-right">
+            <header class="right-header">
+                <h2>Task Details</h2>
+                <button class="icon-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </header>
+
+            <div class="right-content">
+                <div class="productivity-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    </div>
+                    <h4>Task Productivity</h4>
+                    <p>You're on a 5-day streak! Keep up the momentum.</p>
+                </div>
+
+                <div class="info-group">
+                    <h3 class="section-title">CALENDAR TODAY</h3>
+                    <div class="calendar-event border-blue">
+                        <strong>14:00 - 15:30</strong>
+                        <p>Design Review Sync</p>
+                    </div>
+                    <div class="calendar-event border-yellow">
+                        <strong>16:00 - 17:00</strong>
+                        <p>Client Stakeholder Call</p>
+                    </div>
+                </div>
+
+                <div class="info-group">
+                    <h3 class="section-title">LABELS</h3>
+                    <div class="labels-container">
+                        <span class="label-pill">#Marketing</span>
+                        <span class="label-pill">#Q4Plan</span>
+                        <span class="label-pill">#HighPriority</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script type="module" src="./main.js"></script>
 </body>
-
 </html>
