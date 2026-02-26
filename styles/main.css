@@ -281,9 +281,23 @@ button, input, select, textarea {
   transition: all 0.2s;
 }
 
-.nav-item:hover {
-  background-color: var(--app-bg-hover);
-  color: var(--app-text-main);
+.project-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: color-mix(in oklch, var(--md-sys-color-on-surface) 50%, transparent);
+  font-weight: 500;
+  font-size: rem;
+  letter-spacing: -0.04em;
+  transition: all 0.2s;
+}
+
+.nav-item:hover,
+.project-item:hover {
+  background-color: color-mix(in oklch, var(--md-sys-color-on-surface) 10%, transparent);
+  color: var(--md-sys-color-on-surface);
+  border-radius: 12px;
 }
 
 .nav-item.active {
@@ -331,10 +345,6 @@ button, input, select, textarea {
   color: var(--md-sys-color-on-surface);
 }
 
-.project-item {
-  padding: 8px 12px;
-}
-
 .dot {
   width: 8px;
   height: 8px;
@@ -345,14 +355,6 @@ button, input, select, textarea {
 
 .dot-yellow {
   background-color: #FACC15;
-}
-
-.dot-green {
-  background-color: #4ADE80;
-}
-
-.dot-purple {
-  background-color: #A78BFA;
 }
 
 .main-wrapper {
