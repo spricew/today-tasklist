@@ -52,7 +52,7 @@
     color: color-mix(in oklch, var(--md-sys-color-on-surface) 50%, transparent);
     font-weight: 500;
     font-size: 1rem;
-    letter-spacing: -0.04em;
+    letter-spacing: var(--spacing-text-normal);
     transition: all 0.2s;
   }
   

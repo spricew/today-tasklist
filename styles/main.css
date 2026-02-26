@@ -110,6 +110,7 @@
 
   --spacing-text-normal: -0.02em;
   --spacing-text-title: -0.04em;
+  --spacing-text-larger: 0.08em;
 }
 
 /* @media (prefers-color-scheme: dark) {
