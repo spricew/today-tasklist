@@ -419,9 +419,10 @@ button, input, select, textarea {
 }
 
 .task-name {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  color: var(--app-text-main);
+  color: var(--md-sys-color-on-surface);
+  letter-spacing: -0.01em;
 }
 
 /* Estado completado */
