@@ -322,10 +322,14 @@ button, input, select, textarea {
 }
 
 .badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  aspect-ratio: 1/1;
   color: var(--md-sys-color-secondary);
   font-size: 0.75rem;
   font-weight: 700;
-  padding: 2px 8px;
   border-radius: 9999px;
   background-color: color-mix(in oklch, var(--md-sys-color-secondary) 15%, transparent);
 }
