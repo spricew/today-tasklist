@@ -107,6 +107,9 @@
   --app-text-muted: #8E98A5;
   --app-bg-hover: #F8F9FA;
   --app-bg-card: #F4F7FB;
+
+  --spacing-text-normal: -0.02em;
+  --spacing-text-title: -0.04em;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -223,7 +226,7 @@ body {
   overflow: hidden;
   font-family: "DM Sans", system-ui, Arial, Helvetica, sans-serif;
   background-color: var(--md-sys-color-background);
-  color: var(--app-text-main);
+  color: var(--md-sys-color-on-surface);
 }
 
 button, input, select, textarea {
