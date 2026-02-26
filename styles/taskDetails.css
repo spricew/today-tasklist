@@ -1,0 +1,116 @@
+.sidebar-right {
+    width: 320px;
+    flex-shrink: 0;
+    border-left: 1px solid var(--app-border);
+    background-color: var(--md-sys-color-surface);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right-header {
+    height: 64px;
+    border-bottom: 1px solid var(--app-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+  }
+  
+  .right-header h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: var(--spacing-text-title);
+  }
+  
+  .right-content {
+    padding: 24px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .productivity-card {
+    background-color: var(--app-bg-card);
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-align: center;
+    border: 1px solid var(--app-border);
+  }
+  
+  .card-icon {
+    background-color: var(--md-sys-color-secondary);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+  }
+  
+  .card-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .productivity-card h4 {
+    font-size: 0.9rem;
+    color: var(--md-sys-color-secondary);
+    margin-bottom: 8px;
+  }
+  
+  .productivity-card p {
+    font-size: 0.75rem;
+    color: var(--app-text-muted);
+    line-height: 1.4;
+  }
+  
+  .info-group .section-title {
+    padding-left: 0;
+    margin-bottom: 16px;
+  }
+  
+  .calendar-event {
+    background-color: var(--app-bg-hover);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-left: 4px solid transparent;
+  }
+  
+  .calendar-event.border-blue {
+    border-left-color: var(--md-sys-color-secondary);
+  }
+  
+  .calendar-event.border-yellow {
+    border-left-color: #FACC15;
+  }
+  
+  .calendar-event strong {
+    font-size: 0.8rem;
+    color: var(--app-text-main);
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  .calendar-event p {
+    font-size: 0.85rem;
+    color: var(--app-text-muted);
+  }
+  
+  .labels-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .label-pill {
+    background-color: var(--app-bg-card);
+    color: var(--app-text-muted);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 16px;
+  }
