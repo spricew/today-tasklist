@@ -289,11 +289,12 @@ button, input, select, textarea {
   align-items: center;
   justify-content: space-between;
   padding: 10px 12px;
-  border-radius: 8px;
+  border-radius: 12px;
   text-decoration: none;
-  color: var(--app-text-muted);
+  color: color-mix(in oklch, var(--md-sys-color-on-surface) 50%, transparent);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: rem;
+  letter-spacing: -0.04em;
   transition: all 0.2s;
 }
 
@@ -305,11 +306,13 @@ button, input, select, textarea {
 .nav-item.active {
   background-color: color-mix(in oklch, var(--md-sys-color-secondary) 15%, transparent);
   color: var(--md-sys-color-secondary);
+  font-weight: 600;
 }
 
 .nav-item-left {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
 }
 
@@ -319,12 +322,12 @@ button, input, select, textarea {
 }
 
 .badge {
-  background-color: color-mix(in oklch, var(--md-sys-color-secondary) 15%, transparent);
   color: var(--md-sys-color-secondary);
   font-size: 0.75rem;
   font-weight: 700;
   padding: 2px 8px;
-  border-radius: 12px;
+  border-radius: 9999px;
+  background-color: color-mix(in oklch, var(--md-sys-color-secondary) 15%, transparent);
 }
 
 .badge-light {
