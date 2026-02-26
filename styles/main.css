@@ -1,7 +1,7 @@
-*{
+/* *{
   outline: red  solid 1px;
   box-sizing: border-box;
-}
+} */
 
 :root {
 
@@ -246,6 +246,13 @@ button, input, select, textarea {
   background-color: var(--md-sys-color-surface);
 }
 
+.logo-container {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
 .logo-text {
   font-weight: 700;
   font-size: 1.4rem;
@@ -317,12 +324,11 @@ button, input, select, textarea {
 }
 
 .section-title {
+  margin-bottom: 12px;
   font-size: 0.7rem;
   font-weight: 700;
-  color: var(--app-text-muted);
   letter-spacing: 1px;
-  margin-bottom: 12px;
-  padding-left: 12px;
+  color: var(--md-sys-color-on-surface);
 }
 
 .project-item {
