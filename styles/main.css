@@ -289,7 +289,6 @@ button, input, select, textarea {
   align-items: center;
   justify-content: space-between;
   padding: 10px 12px;
-  border-radius: 12px;
   text-decoration: none;
   color: color-mix(in oklch, var(--md-sys-color-on-surface) 50%, transparent);
   font-weight: 500;
@@ -304,6 +303,7 @@ button, input, select, textarea {
 }
 
 .nav-item.active {
+  border-radius: 12px;
   background-color: color-mix(in oklch, var(--md-sys-color-secondary) 15%, transparent);
   color: var(--md-sys-color-secondary);
   font-weight: 600;
