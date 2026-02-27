@@ -24,7 +24,7 @@
   --md-sys-color-on-error-container: #93000A;
   --md-sys-color-background: #F9F9F9;
   --md-sys-color-on-background: #1B1B1B;
-  --md-sys-color-surface: #F9F9F9;
+  --md-sys-color- : #F9F9F9;
   --md-sys-color-on-surface: #1B1B1B;
   --md-sys-color-surface-variant: #EBE0E1;
   --md-sys-color-on-surface-variant: #4C4546;
@@ -101,12 +101,14 @@
   --md-ref-palette-neutral-40: #5E5E5E;
   --md-ref-palette-neutral-90: #E2E2E2;
 
-  --app-blue-light: #EBF4FF;
+  --app-blue-light: #ee1d1d;
   --app-border: #E8ECEF;
   --app-text-main: #1C2025;
   --app-text-muted: #8E98A5;
   --app-bg-hover: #F8F9FA;
   --app-bg-card: #F4F7FB;
+
+  --color-secondary-background: color-mix(in oklch, var(--md-sys-color-secondary) 10%, transparent);
 
   --spacing-text-normal: -0.02em;
   --spacing-text-title: -0.04em;
@@ -502,4 +504,22 @@ button, input, select, textarea {
 
 .upcoming-section .task-list {
   gap: 16px;
+}
+
+.section-title {
+  margin-bottom: 12px;
+  padding: 0 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--md-sys-color-on-surface);
+}
+
+.label-pill {
+  background-color: var(--color-primary-background);
+  color: var(--md-sys-color-secondary);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 16px;
 }
