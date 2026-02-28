@@ -91,7 +91,7 @@
 
   .calendar-event p {
     font-size: 0.85rem;
-    color: var(--md-sys-color-on-surface);
+    color: var(--md-sys-color-secondary);
   }
   
   .labels-container {
