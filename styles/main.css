@@ -516,7 +516,7 @@ button, input, select, textarea {
 }
 
 .label-pill {
-  background-color: var(--color-primary-background);
+  background-color: var(--color-secondary-background);
   color: var(--md-sys-color-secondary);
   font-size: 0.75rem;
   font-weight: 500;
