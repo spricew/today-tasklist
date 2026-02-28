@@ -31,9 +31,10 @@
   }
   
   .productivity-card {
+    width: 100%;
     background-color: color-mix(in oklch, var(--md-sys-color-secondary) 10%, transparent);
-    border-radius: 12px;
-    padding: 24px 20px;
+    border-radius: 1.5em;
+    padding: 1.6em 1.5em;
     text-align: center;
   }
   
