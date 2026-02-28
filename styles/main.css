@@ -108,7 +108,7 @@
   --app-bg-hover: #F8F9FA;
   --app-bg-card: #F4F7FB;
 
-  --color-secondary-background: color-mix(in oklch, var(--md-sys-color-secondary) 10%, transparent);
+  --color-secondary-background: color-mix(in oklch, var(--md-sys-color-secondary-container) 10%, transparent);
 
   --spacing-text-normal: -0.02em;
   --spacing-text-title: -0.04em;
