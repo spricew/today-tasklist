@@ -298,16 +298,17 @@ textarea {
   background: transparent;
   cursor: pointer;
   transition: all 0.2s;
-}
 
-.check-circle:hover {
-  border-color: var(--app-text-muted);
+  &:hover {
+    border-color: var(--md-sys-color-outline);
+  }
+
 }
 
 .check-circle.checked {
   background-color: var(--md-sys-color-secondary);
-  border-color: var(--md-sys-color-secondary);
-  color: white;
+  border: 2px solid var(--md-sys-color-secondary);
+  color: var(--md-sys-color-on-secondary);
 }
 
 .check-circle.checked svg {
