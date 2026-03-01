@@ -1,0 +1,33 @@
+.topbar {
+    height: 64px;
+    border-bottom: 1px solid var(--app-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.search-container {
+    position: relative;
+    width: 300px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    color: var(--app-text-muted);
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 10px 10px 36px;
+    border-radius: 8px;
+    border: none;
+    background-color: #F5F7F9;
+    font-family: inherit;
+    font-size: 0.85rem;
+    outline: none;
+}
