@@ -1,7 +1,7 @@
 .sidebar-right {
     width: 320px;
     flex-shrink: 0;
-    border-left: 1px solid var(--app-border);
+    border-left: 1px solid var(--md-sys-color-outline-variant);
     background-color: var(--md-sys-color-surface);
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
   
   .right-header {
     height: 64px;
-    border-bottom: 1px solid var(--app-border);
+    border-bottom: 1px solid var(--md-sys-color-outline-variant);
     display: flex;
     align-items: center;
     justify-content: space-between;
