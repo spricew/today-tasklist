@@ -102,7 +102,7 @@
   --md-ref-palette-neutral-40: #5E5E5E;
   --md-ref-palette-neutral-90: #E2E2E2;
 
-  --color-secondary-background: color-mix(in oklch, var(--md-sys-color-secondary-container) 10%, transparent);
+  --color-secondary-background: color-mix(in oklch, var(--md-sys-color-secondary) 10%, transparent);
 
   --spacing-text-normal: -0.02em;
   --spacing-text-title: -0.04em;
@@ -117,7 +117,7 @@
     --md-sys-color-on-primary: #303030;
     --md-sys-color-primary-container: #000000;
     --md-sys-color-on-primary-container: #757575;
-    --md-sys-color-secondary: #ADC6FF;
+    --md-sys-color-secondary: #5185ff;
     --md-sys-color-on-secondary: #002E69;
     --md-sys-color-secondary-container: #4B8EFF;
     --md-sys-color-on-secondary-container: #001435;
