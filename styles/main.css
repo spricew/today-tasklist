@@ -115,7 +115,7 @@
   --md-ref-palette-neutral-99: #FCFCFC;
   --md-ref-palette-neutral-100: #FFFFFF;
 
-  --color-secondary-background: color-mix(in oklch, var(--md-sys-color-secondary) 10%, transparent);
+  --color-secondary-background: color-mix(in oklch, var(--md-ref-palette-secondary-50) 10%, transparent);
 
   --spacing-text-normal: -0.02em;
   --spacing-text-title: -0.04em;
