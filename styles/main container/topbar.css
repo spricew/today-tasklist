@@ -18,7 +18,7 @@
     top: 50%;
     transform: translateY(-50%);
     width: 16px;
-    color: var(--app-text-muted);
+    color: var(--md-ref-palette-neutral-50);
 }
 
 .search-input {
@@ -26,8 +26,7 @@
     padding: 10px 10px 10px 36px;
     border-radius: 8px;
     border: none;
-    background-color: #F5F7F9;
-    font-family: inherit;
+    background-color: var(--md-sys-color-surface-container-high);
     font-size: 0.85rem;
     outline: none;
 }
