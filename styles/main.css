@@ -5,7 +5,7 @@
 
 :root {
   color-scheme: light dark;
-  
+
   --md-sys-color-primary: #1b1b1b;
   --md-sys-color-surface-tint: #5E5E5E;
   --md-sys-color-on-primary: #FFFFFF;
@@ -101,13 +101,6 @@
   --md-ref-palette-neutral-10: #1B1B1B;
   --md-ref-palette-neutral-40: #5E5E5E;
   --md-ref-palette-neutral-90: #E2E2E2;
-
-  --app-blue-light: #ee1d1d;
-  --app-border: #E8ECEF;
-  --app-text-main: #1C2025;
-  --app-text-muted: #8E98A5;
-  --app-bg-hover: #F8F9FA;
-  --app-bg-card: #F4F7FB;
 
   --color-secondary-background: color-mix(in oklch, var(--md-sys-color-secondary-container) 10%, transparent);
 
