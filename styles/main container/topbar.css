@@ -1,6 +1,6 @@
 .topbar {
     height: 64px;
-    border-bottom: 1px solid var(--app-border);
+    border-bottom: 1px solid var(--md-sys-color-outline-variant);
     display: flex;
     align-items: center;
     justify-content: space-between;
