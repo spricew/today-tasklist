@@ -24,7 +24,7 @@
   --md-sys-color-on-error-container: #93000A;
   --md-sys-color-background: #F9F9F9;
   --md-sys-color-on-background: #1B1B1B;
-  --md-sys-color- : #F9F9F9;
+  --md-sys-color-surface: #F9F9F9;
   --md-sys-color-on-surface: #1B1B1B;
   --md-sys-color-surface-variant: #EBE0E1;
   --md-sys-color-on-surface-variant: #4C4546;
@@ -232,86 +232,12 @@ body {
   color: var(--md-sys-color-on-surface);
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
   font-size: inherit;
-}
-
-.app-container {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-}
-
-.main-wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  background-color: #FFFFFF;
-}
-
-.topbar {
-  height: 64px;
-  border-bottom: 1px solid var(--app-border);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 32px;
-}
-
-.search-container {
-  position: relative;
-  width: 300px;
-}
-
-.search-icon {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 16px;
-  color: var(--app-text-muted);
-}
-
-.search-input {
-  width: 100%;
-  padding: 10px 10px 10px 36px;
-  border-radius: 8px;
-  border: none;
-  background-color: #F5F7F9;
-  font-family: inherit;
-  font-size: 0.85rem;
-  outline: none;
-}
-
-.search-input:focus {
-  box-shadow: 0 0 0 2px var(--md-sys-color-secondary-light);
-}
-
-.topbar-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.icon-btn {
-  background: none;
-  border: none;
-  color: var(--app-text-muted);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon-btn svg {
-  width: 20px;
-  height: 20px;
-}
-
-.icon-btn:hover {
-  color: var(--app-text-main);
 }
 
 .btn-primary {
@@ -330,8 +256,29 @@ button, input, select, textarea {
   transition: background 0.2s;
 }
 
-.btn-primary:hover {
-  background-color: #1a62c6;
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--app-text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: var(--app-text-main);
+  }
+}
+
+.icon-btn svg {
+  width: 20px;
+  height: 20px;
 }
 
 .btn-primary svg {
@@ -473,25 +420,7 @@ button, input, select, textarea {
   color: var(--app-text-muted);
 }
 
-.add-task-btn {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  color: var(--app-text-muted);
-  font-weight: 500;
-  font-size: 0.95rem;
-  cursor: pointer;
-  padding-top: 8px;
-}
 
-.add-task-btn svg {
-  width: 22px;
-  height: 22px;
-}
-
-.add-task-btn:hover {
-  color: var(--app-text-main);
-}
 
 .upcoming-section {
   margin-top: 48px;
