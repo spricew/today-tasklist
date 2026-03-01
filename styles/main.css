@@ -346,7 +346,7 @@ textarea {
 }
 
 .meta-tag.color-gray {
-  color: var(--app-text-muted);
+  color: var(--md-ref-palette-neutral-50);
 }
 
 .meta-tag.color-green {
