@@ -339,3 +339,9 @@ textarea {
   padding: 6px 12px;
   border-radius: 16px;
 }
+
+/* Colores para meta-tags (prioridad/etiquetas) */
+.meta-tag.color-orange { color: #ea580c; }
+.meta-tag.color-gray { color: var(--app-text-muted); }
+.meta-tag.color-green { color: #16a34a; }
+.meta-tag.color-blue { color: #2563eb; }

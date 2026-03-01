@@ -17,8 +17,15 @@
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    width: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--md-ref-palette-neutral-50);
+}
+
+.search-icon svg {
+    width: 16px;
+    height: 16px;
 }
 
 .search-input {

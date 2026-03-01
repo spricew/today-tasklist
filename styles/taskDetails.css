@@ -53,6 +53,7 @@
   .card-icon svg {
     width: 18px;
     height: 18px;
+    stroke-width: 3.5;
   }
   
   .productivity-card h4 {
