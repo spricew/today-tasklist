@@ -1,10 +1,9 @@
-
 .sidebar-left {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
     width: 250px;
-    border-right: 1px solid var(--app-border);
+    border-right: 1px solid var(--md-sys-color-outline-variant);
     background-color: var(--md-sys-color-surface);
   }
   
