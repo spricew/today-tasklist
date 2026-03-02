@@ -33,3 +33,21 @@
     font-size: 0.85rem;
     outline: none;
 }
+
+.theme-toggle-btn {
+    display: inline-flex;
+    margin-left: 12px;
+    height: 38px;
+    width: 38px;
+    background-color: var(--md-sys-color-surface-container-high);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+.theme-toggle-btn:hover {
+    background-color: var(--md-sys-color-surface-container-highest);
+}
+
+.theme-toggle-btn svg {
+    width: 18px;
+    height: 18px;
+}
